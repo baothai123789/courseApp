@@ -10,4 +10,5 @@
 .env
 # Built Visual Studio Code Extensions
 *.vsix
-.migrations
+migrations
+__pycache__
