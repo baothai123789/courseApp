@@ -12,3 +12,4 @@
 *.vsix
 migrations
 __pycache__
+venv
