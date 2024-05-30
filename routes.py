@@ -10,3 +10,5 @@ def root():
 @app.route("/home")
 def home():
     redirect("/")
+
+

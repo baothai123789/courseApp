@@ -4,7 +4,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from sqlalchemy import MetaData
 
-
 convention = {
     "ix": 'ix_%(column_0_label)s',
     "uq": "uq_%(table_name)s_%(column_0_name)s",
@@ -22,8 +21,11 @@ def create_app(config_class=Config):
     migrate.init_app(newApp, db,render_as_batch=True)
     return newApp
 
-
+#init app
 app = create_app(DevEnvConfig)
+
+
+
 
 from . import routes
 from . import model
